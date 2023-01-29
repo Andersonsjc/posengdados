@@ -6,7 +6,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     buket = "terraform-anderson-igti-edc"
-    key = "state/igti/edc/mod1/terraform.tfstate"
+    key = "state/igti/edc/mod1/terraform.tf"
     region = "us-east-1"
   }
 }
