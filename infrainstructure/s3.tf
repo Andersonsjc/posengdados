@@ -4,7 +4,7 @@
 
 resource "aws_s3_bucket" "dl" {
     # Parâmetros de configuração do recurso escolhido
-    bucket = "datalake-andersonjosesiqueira-511442505751"
+    bucket = "${var.base_bucket_name}-${var.ambiente}-${var.numero_conta}" #"datalake-andersonjosesiqueira-511442505751"
     acl = "private"
     tags = {
         IES   = "IGTI"
