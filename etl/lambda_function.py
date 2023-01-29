@@ -12,7 +12,7 @@ def handler(event, context):
                 JobFlowRole='EMR_EC2_DefaultRole',
                 VisibleToAllUsers=True,
                 LogUri='s3://s3://datalake-andersonjosesiqueira-511442505751/emr-logs',
-                ReleaseLabel='emr-6.3.0',
+                ReleaseLabel='emr-6.7.0',
                 Instances={
                     'InstanceGroups': [
                         {
@@ -33,7 +33,7 @@ def handler(event, context):
                     'Ec2KeyName': 'anderson-igti-teste',
                     'KeepJobFlowAliveWhenNoSteps': True,
                     'TerminationProtected': False,
-                    'Ec2SubnetId': 'subnet-1df20360'
+                    'Ec2SubnetId': 'subnet-003605a03dc6e126a'
                 },
 
                 Applications=[
