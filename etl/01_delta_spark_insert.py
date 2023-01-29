@@ -31,4 +31,3 @@ print("Writing delta table...")
     .partitionBy("year")
     .save("s3://datalake-andersonjosesiqueira-511442505751/consumer-zone/rans/")
 )
-v
