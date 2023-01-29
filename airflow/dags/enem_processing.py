@@ -59,7 +59,7 @@ def pipeline_enem():
                 'Ec2KeyName': 'anderson-igti-teste',
                 'KeepJobFlowAliveWhenNoSteps': True,
                 'TerminationProtected': False,
-                'Ec2SubnetId': 'subnet-1df20360'
+                'Ec2SubnetId': 'subnet-003605a03dc6e126a'
             },
 
             Applications=[{'Name': 'Spark'}],
