@@ -5,7 +5,7 @@ provider "aws" {
 #Centralizar o arquivo de controle de estado do terraform
 terraform {
   backend "s3" {
-    buket = "terraform-anderson-igti-edc"
+    bucket = "terraform-anderson-igti-edc"
     key = "state/igti/edc/mod1/terraform.tf"
     region = "us-east-1"
   }
