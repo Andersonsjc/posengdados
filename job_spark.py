@@ -18,7 +18,7 @@ enem = (
     .option("sep", ";")
     .option("encoding", "ISO-8859-1")
     .option("inferSchema", True)
-    .load("s3://datalake-andersonjosesiqueira-511442505751/raw-data/microdados_enem.csv")
+    .load("s3://datalake-andersonjosesiqueira-511442505751/raw-data/enem/year-2020/MICRODADOS_ENEM_2020.bz2")
 )
 
 (
@@ -26,5 +26,5 @@ enem = (
     .write
     .mode("overwrite")
     .format("parquet")
-    .save("s3://datalake-andersonjosesiqueira-511442505751/consumer-zone/microdados_enem")
+    .save("s3://datalake-andersonjosesiqueira-511442505751/consumer-zone/enem/")
 )
